@@ -7,21 +7,26 @@
     <title>Decodificador de texto</title>
 </head>
 <body>
-    <header></header>
-    <main>
+    <main class="conteudo">
+        <img src="./assets/img/logoAlura.png" alt="Logo Alura" class="logo">
         <section>
-            <img src="./assets/img/logo.png" alt="Logo Alura">
-            <textarea name="" id="" cols="30" rows="10">Digite o seu texto</textarea>
-            <button class="botao">Criptografar</button>
-            <button class="">Descriptografar</button>
+            <textarea class="text-input">Digite o seu texto</textarea>
+            <div class="form-group">
+                <img src="/assets/img/" alt="Imagem de alerta" class="img-alert">
+                <label for="input-texto">Apenas letras minúsculas e sem acento.</label>
+            </div>
+            <div class="botoes-div">
+            <button class="btn-criptografar">Criptografar</button>
+            <button class="btn-descriptografar">Descriptografar</button>
+            </div>
         </section>
         <section>
-            <img src="./assets/img/logo.png" alt="Logo Alura">
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-            <button class="botao">Criptografar</button>
-            <button class="">Descriptografar</button>
-        </section>        
+            <div id="div-mensagem">
+                <textarea class="div_mensagem_mostrar"></textarea>
+                <button class="btn-copiar">Copiar</button>
+            </div>            
+        </section>       
     </main>
-    <footer></footer>
+    <script src="script.js" defer></script>
 </body>
 </html>
