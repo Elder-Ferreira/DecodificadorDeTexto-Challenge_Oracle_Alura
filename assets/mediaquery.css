@@ -1,0 +1,64 @@
+@media (max-width: 720px) {
+  .cabecalho {
+    padding: 5%;
+  }
+
+  .conteudo {
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .text-area {
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  .mensagem {
+    justify-content: flex-end;
+    flex-direction: column;
+  }
+
+  .cover {
+    display: block;
+    width: auto;
+  }
+
+  .rodape {
+    display: flex;
+    width: auto;
+  }
+}
+
+@media (max-width: 1200px) {
+  .cabecalho {
+    padding: 10%;
+  }
+  .conteudo {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 5%;
+  }
+
+  .text-area {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+
+  .mensagem {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+  }
+
+  .cover {
+    display: block;
+    padding: 5%;
+  }
+  .rodape {
+    display: flex;
+    width: auto;
+  }
+}
