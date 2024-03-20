@@ -4,34 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style.css">
     <title>Decodificador de texto</title>
 </head>
 
 <body>
+    <header class="cabecalho">
+        <img class="logo" src="./assets/img/logoAlura.png" alt="Logo Alura">
+    </header>
     <main class="conteudo">
-        <img src="./assets/img/logoAlura.png" alt="Logo Alura" class="logo">
         <section>
-            <textarea class="text-input">Digite o seu texto</textarea>
-            <div class="form-group">
-                <img src="/assets/img/" alt="Imagem de alerta" class="img-alert">
-                <label for="input-texto">Apenas letras minúsculas e sem acento.</label>
+            <textarea class="text-area" cols="41" rows="4" placeholder="Digite o seu texto"></textarea>
+            <div class="aviso">
+                <p>Apenas letras minúsculas e sem acento</p>
             </div>
-            <div class="botoes-div">
-                <button class="btn-criptografar">Criptografar</button>
-                <button class="btn-descriptografar">Descriptografar</button>
+            <div class="botoes">
+                <button class="btn-criptografar" onclick="btnCriptografar()">Criptografar</button>
+                <button class="btn-descriptografar" onclick="btnDescriptografar()">Descriptografar</button>
             </div>
         </section>
         <section>
-            <div id="div-mensagem">
-                <textarea class="div_mensagem_mostrar"></textarea>
-                <button class="btn-copiar">Copiar</button>
-            </div>
+            <textarea class="mensagem" cols="30" rows="10" placeholder=""></textarea>
+            <button class="btn-copiar" onclick="copiar()">Copiar</button>
         </section>
     </main>
-    <footer class="info">
-        <p>Criado por: Elder Ramos</p>
-        <p>2024</p>
+    <img class="cover" src="./assets/img/believe.png" alt="mensagem motivacional">
+    <footer class="rodape">
+        <p>Challenge Decodificador</p>
     </footer>
     <script src="script.js" defer></script>
 </body>
